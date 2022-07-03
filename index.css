@@ -1,0 +1,33 @@
+* {
+    cursor: none;
+}
+.item {
+    width: 80px;
+    height: 80px;
+    background-image: url(./index.ico);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fade {
+    0% {
+        transform: rotateZ(0deg) scale(0);
+        opacity: 0;
+
+    }
+    20% {
+        transform: rotateZ(60deg) scale(1);
+        opacity: 1;
+
+    }
+    100% {
+        transform: rotateZ(120deg) scale(1);
+        opacity: 0;
+    }
+}
+
